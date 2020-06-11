@@ -9,6 +9,8 @@ const pageNames = [
 
 let pageIndex = 0;
 
+const headerText = document.getElementById("header-text");
+
 function onLoad() {
     loadPage(pageIndex);
 }
@@ -25,6 +27,8 @@ function loadPage(index) {
     };
 
     xhr.send();
+
+    headerText.innerHTML = `${index} - ${pageNames[index]}`;
 }
 
 function nextPage() {
