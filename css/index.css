@@ -2,6 +2,10 @@
 
 :root {
     --content-padding: 12rem;
+    --content-font-size: 1.5rem;
+
+    --footer-button-on: #067ecf;
+    --footer-button-off: #aaaaaa;
 }
 
 body {
@@ -31,10 +35,37 @@ body {
 
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+    font-size: var(--content-font-size);
 }
 
 #content-img {
     margin: 2rem;
     text-align: center;
+}
+
+#footer {
+    position: fixed;  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    margin: var(--content-font-size);
+
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--content-font-size);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+#footer a {
+    margin: calc(var(--content-font-size) * 5);
+
+    color: var(--footer-button-on);
+    text-decoration: none;
+}
+
+#footer a:hover {
+    cursor: pointer;
 }
