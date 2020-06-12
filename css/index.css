@@ -3,10 +3,10 @@
 :root {
     --ui-bg-color: #f3f3f3;
 
-    --content-padding: 12rem;
+    --content-padding: 10rem;
     --content-font-size: 1.5rem;
 
-    --content-img-width: 360px;
+    --content-img-height: 330px;
 
     --li-padding: 3rem;
 
@@ -51,7 +51,7 @@ body {
 }
 
 #content-img img {
-    height: var(--content-img-width);
+    height: var(--content-img-height);
     vertical-align: middle;
 }
 
