@@ -20,6 +20,10 @@ function onLoad() {
         pageIndex = 0;
     }
 
+    if (pageIndex == null) {
+        pageIndex = 0;
+    }
+
     loadPage(pageIndex);
 }
 
