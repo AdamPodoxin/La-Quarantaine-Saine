@@ -14,6 +14,12 @@ const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
 
 function onLoad() {
+    try {
+        pageIndex = window.localStorage.getItem("pageIndex");
+    } catch {
+        pageIndex = 0;
+    }
+
     loadPage(pageIndex);
 }
 
@@ -29,6 +35,7 @@ function loadPage(index) {
     };
 
     xhr.send();
+    window.localStorage.setItem("pageIndex", index);
 
     headerText.innerHTML = `${index} - ${pageNames[index]}`;
 
