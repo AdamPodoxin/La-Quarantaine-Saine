@@ -55,12 +55,23 @@ body {
 #content-img img {
     height: var(--content-img-height);
     vertical-align: middle;
+
+    border-radius: 1.4rem;
+}
+
+#content-img a img {
+    border: 2px solid var(--footer-button-on);
 }
 
 #content li {
     margin: 2rem;
     padding-left: var(--li-padding);
     padding-right: var(--li-padding);
+}
+
+#content a, #content a:visited {
+    color:  var(--footer-button-on);
+    text-decoration: underline;
 }
 
 #footer {
