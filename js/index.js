@@ -16,7 +16,7 @@ const nextButton = document.getElementById("next-button");
 function onLoad() {
     try {
         pageIndex = window.localStorage.getItem("pageIndex");
-    } catch {
+    } catch (err) {
         pageIndex = 0;
     }
 
