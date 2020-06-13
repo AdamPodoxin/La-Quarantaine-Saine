@@ -20,7 +20,7 @@ function onLoad() {
         pageIndex = 0;
     }
 
-    if (pageIndex == null) {
+    if (pageIndex == null || pageIndex == "null") {
         pageIndex = 0;
     }
 
