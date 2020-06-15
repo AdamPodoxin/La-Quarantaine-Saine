@@ -24,6 +24,11 @@ function onLoad() {
         pageIndex = 0;
     }
 
+    //Pre-load all pages
+    for (let i = 0; i < pageNames.length; i++) {
+        loadPage(i);
+    }
+
     loadPage(pageIndex);
 }
 
